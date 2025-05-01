@@ -23,12 +23,12 @@ function InvitationDetail() {
       {/* Gambar pasangan */}
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-6">
         <img
-          src="https://via.placeholder.com/150"
+          src="/foto1.jpg"
           alt="Pasangan 1"
           className="rounded-full w-32 h-32 object-cover"
         />
         <img
-          src="https://via.placeholder.com/150"
+          src="/foto2.jpg"
           alt="Pasangan 2"
           className="rounded-full w-32 h-32 object-cover"
         />
