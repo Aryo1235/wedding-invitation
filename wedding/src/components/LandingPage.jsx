@@ -10,60 +10,51 @@ function LandingPage({ onOpenDetail }) {
         backgroundAttachment: "fixed",
       }}
     >
-           {" "}
-      <div className="min-h-screen flex items-center justify-center px-4 backdrop-blur-sm">
-               {" "}
+      <div className="min-h-screen flex items-center justify-center px-4 py-10">
         <motion.div
-          className="relative bg-white border-2 border-gray-300 rounded-lg shadow-lg w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl aspect-[3/5] flex flex-col items-center justify-center p-6 sm:p-8 overflow-hidden"
+          className="relative bg-white border-2 border-gray-300 rounded-xl shadow-lg w-full max-w-2xl lg:max-w-md aspect-[4/6] sm:aspect-[3/5] flex flex-col items-center justify-center p-6 sm:p-8 overflow-hidden"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-                    {/* Inner Border */}         {" "}
-          <div className="absolute inset-4 border-2 sm:border-4 border-gray-300 rounded-md pointer-events-none" />
-                    {/* Ornamen Bunga */}         {" "}
+          {/* Inner Border */}
+          <div className="absolute inset-4 border-4 border-gray-300 rounded-md pointer-events-none" />
+
+          {/* Ornamen Bunga */}
           <img
             src="/flower2.jpg"
             alt="floral-top"
-            className="absolute top-0 right-0 w-16 sm:w-20 md:w-24"
+            className="absolute top-0 right-0 w-24"
           />
-                   {" "}
           <img
             src="/flower1.jpg"
             alt="floral-bottom"
-            className="absolute bottom-0 left-0 w-16 sm:w-20 md:w-24"
+            className="absolute bottom-0 left-0 w-24"
           />
-                   {" "}
+
           <div className="text-center z-10">
-                       {" "}
             <h1
-              className="text-3xl sm:text-4xl md:text-5xl font-bold text-pink-600 mb-2 sm:mb-4"
+              className="text-6xl sm:text-6xl font-bold text-pink-600 mb-4"
               style={{ fontFamily: "'Great Vibes', cursive" }}
             >
-                            Marsya & Akri            {" "}
+              Marsya & Akri
             </h1>
-                       {" "}
             <p
-              className="text-xl sm:text-2xl text-gray-700 mb-4 sm:mb-6"
+              className="text-3xl sm:text-4xl text-gray-700 mb-6"
               style={{ fontFamily: "'Great Vibes', cursive" }}
             >
-                            12 Desember 2025            {" "}
+              12 Desember 2025
             </p>
-                       {" "}
             <button
               onClick={onOpenDetail}
-              className="bg-pink-500 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:bg-pink-600 transition text-lg sm:text-xl"
+              className="bg-pink-500 text-white text-xl sm:text-2xl px-8 py-4 rounded-full hover:bg-pink-600 transition"
               style={{ fontFamily: "'Great Vibes', cursive" }}
             >
-                            Lihat Undangan            {" "}
+              Lihat Undangan
             </button>
-                     {" "}
           </div>
-                 {" "}
         </motion.div>
-             {" "}
       </div>
-         {" "}
     </div>
   );
 }
