@@ -1,0 +1,28 @@
+.hexagon-wrapper {
+  position: relative;
+  width: 14rem; /* atau sesuaikan */
+  height: 14rem;
+}
+
+.hexagon-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #d4af37, #fff); /* bisa diganti warna border */
+  clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+  z-index: 0;
+  transform: scale(1.1); /* agar border lebih besar dari gambar */
+}
+
+.hexagon-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+  position: relative;
+  z-index: 1;
+  border-radius: 0.5rem;
+}
